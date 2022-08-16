@@ -1,0 +1,19 @@
+{% load crispy_forms_tags %}
+{% block body%}
+    <center>
+        <h1>Add HTTPS from twitter</h1>
+
+    <ul>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{form|crispy}}
+            <br>
+            <input type="submit" class='btn btn-outline-success' value="Create">
+        </form>
+    </ul>
+
+    </center>
+
+    <br>
+
+{%endblock body%}
